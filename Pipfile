@@ -1,0 +1,15 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+flask = "==1.0.2"
+ipython = "==7.1.1"
+httpie = "==1.0.2"
+python-dotenv = "==0.9.1"
+
+[requires]
+python_version = "3.6"
