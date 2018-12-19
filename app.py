@@ -27,7 +27,7 @@ def webhook_gitee():
     if WEBHOOK_PASSWORD == password:
         os.chdir(GIT_PATH)
         os.system("git pull")
-        return json_success('git pull完成')
+        return json_success(msg='git pull完成')
     else:
         return json_error(msg='密码不正确')
 
