@@ -14,6 +14,7 @@ webhook = Blueprint('webhook', __name__, url_prefix='/webhook')
 
 GIT_PATH = os.getenv('git_path', '/home/www/html')
 WEBHOOK_PASSWORD = os.getenv('webhook_password', 'yourwebhookpassword')
+DEBUG = True if os.getenv('FLASK_ENV', 'development') == 'production' else False
 
 
 @webhook.route('/gitee/', methods=['GET', 'POST'])
@@ -34,5 +35,5 @@ app.register_blueprint(webhook)
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True, threaded=True)
+    app.run(host='0.0.0.0', debug=DEBUG, threaded=True)
     
