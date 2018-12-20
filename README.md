@@ -32,3 +32,16 @@ $ pipenv shell
 # or
 (xwebhook)$ flask run -h 0.0.0.0 &
 ```
+
+#### 在仓库中添加webhook
+
+for `gitee`:
+
+- webhook url: http://host:[port]/webhook/gitee/
+- password: 自定义安全令牌
+
+for `gitlab`:
+
+- webhook url: http://host:[port]/webhook/gitlab/
+- token: 自定义安全令牌
+
