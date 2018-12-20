@@ -1,4 +1,4 @@
-# webhook-python
+# xwebhook
 
 webhook(歪脖钩子)python版， 基于python3.6.7实现webhook脚本自动部署脚本。
 
@@ -25,6 +25,7 @@ cp .env_template .env
 
 ```
 $ pip3.6 install pipenv
+$ cd xwebhook
 $ pipenv install
 $ pipenv shell
 (xwebhook)$ python app.py &
