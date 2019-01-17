@@ -18,7 +18,7 @@ python3.6.7+flask1.0.2
 - `webhook_token`: 接头暗号(密码/安全令牌)， 明文
 
 ```
-cp .env_template .env
+cp .env.example .env
 ```
 
 #### 用法
