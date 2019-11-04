@@ -8,7 +8,7 @@ verify_ssl = true
 [packages]
 flask = "==1.0.2"
 ipython = "==7.1.1"
-httpie = "==1.0.2"
+httpie = "==1.0.3"
 python-dotenv = "==0.9.1"
 
 [requires]
